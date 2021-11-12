@@ -15,7 +15,12 @@
     <!--main container-->
     <section class="wrapper">
       <div class="sidebar">
-        <img class="foto" src="./image/Andrii1.jpg" alt="Foto Andrii Lanyk" />
+        <figure class="photo-card-anime red">
+          <img class="foto" src="./image/Andrii1.jpg" alt="Foto Andrii Lanyk" />
+          <figcaption>
+            <h2>Andrii <span> Lanyk</span></h2>
+          </figcaption>
+        </figure>
 
         <!--Contacts container-->
         <div class="contacts-container">
@@ -23,13 +28,13 @@
           <ul class="contacts-list">
             <li>
               <svg class="contacts-icon">
-                <use href="./images/symbol-defs.svg#icon-address-book"></use>
+                <use href="./image/symbol-defs.svg#icon-house"></use>
               </svg>
               <span class="contacts-country">Kolomyia, Ukraine</span>
             </li>
             <li>
               <svg class="contacts-icon">
-                <use href="./images/symbol-defs.svg#icon-mobile"></use>
+                <use href="./image/symbol-defs.svg#icon-phone"></use>
               </svg>
               <a class="contacts-link" href="tell:+380989630613"
                 >+38 098 963 06 13</a
@@ -37,7 +42,7 @@
             </li>
             <li>
               <svg class="contacts-icon">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
+                <use href="./image/symbol-defs.svg#icon-email"></use>
               </svg>
               <a class="contacts-link" href="mailto:andriylanyk@gmail.com"
                 >andriylanyk@gmail.com</a
@@ -45,7 +50,7 @@
             </li>
             <li>
               <svg class="contacts-icon">
-                <use href="./images/symbol-defs.svg#icon-github"></use>
+                <use href="./image/symbol-defs.svg#icon-github"></use>
               </svg>
               <a class="contacts-link" href="https://github.com/andriy-lanyk"
                 >https://github.com/andriy-lanyk</a
@@ -53,7 +58,7 @@
             </li>
             <li>
               <svg class="contacts-icon">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
               </svg>
               <a
                 class="contacts-link"
@@ -277,23 +282,33 @@
               <span class="profession-time">July 2010 - December 2020</span>
             </li>
           </ul>
-          <div class="profession-duties">
-            <p class="profession-item">My achievements:</p>
-            <ul>
-              <li class="number-information">
+          <!--  -->
+          <button
+            type="button"
+            class="profession__link profession__link_active"
+            data-atribut="professionButton"
+          >
+            My achievements
+          </button>
+          <!--  -->
+          <ul class="profession-duties visually-hidden">
+            <li class="number-information">
+              <p class="profession-item">
                 Ensured the reduction of the balance of unfulfilled court
                 decisions on debt collection in favor of the state from 40
                 million UAH to 8 million UAH.
-              </li>
-              <li class="number-information">
+              </p>
+            </li>
+            <li class="number-information">
+              <p class="profession-item">
                 Organized an effective investigation of complex multi-episode
                 criminal proceedings, which caused damage to individuals in the
                 amount of more than 4 million UAH, as well as related to illicit
                 drug trafficking and causing grievous bodily harm to order,
                 which were sent to court.
-              </li>
-            </ul>
-          </div>
+              </p>
+            </li>
+          </ul>
         </section>
         <!-- Education container -->
         <section>
